@@ -29,6 +29,8 @@ Neste projeto de estudo, sera colocado exercicios diversos de projetos propostos
 
   [<img src="img/GabrielaPinheiro.png" width="25%"><br/><em>Gabriela Pinheiro com FORMULÁRIO DE LOGIN COM HTML E CSS ANIMADO</em>](https://www.instagram.com/ga.brielapinheiro)
 
+  [<em>Visite Gabriela Pinheiro no youtube</em>](https://www.youtube.com/GabrielaPinheiro)
+
 ## Meus Contatos e Redes Sociais
 
 - :email: eduardo@secautomation.com.br
