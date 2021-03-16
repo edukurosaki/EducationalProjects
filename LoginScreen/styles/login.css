@@ -1,0 +1,114 @@
+:root{
+    --input-linear: linear-gradient(120deg, rgb(61, 59, 59), rgb(230, 230, 235));
+    --button-linear: linear-gradient(120deg, rgb(61, 59, 59), rgb(206, 206, 214));
+    --button2-linear: linear-gradient(120deg, rgb(214, 171, 171), rgb(1, 1, 29));
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+
+.login{
+    height: 100vh;
+    background: var(--input-linear);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.container_login{
+    min-height: 400px;
+    width: 300px;
+    background-color: #ffffffff;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.tittle_login{
+    margin: 0;
+    color: rgb(71, 68, 68);
+}
+
+.form_login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_mail, .input_password{
+    height: 40px;
+    width: 100%;
+    padding-left: 8px;
+    box-sizing: none;
+    border: unset;
+    outline: none;
+}
+
+.span_border{
+    height: 2px;
+    width: 100%;
+    margin-bottom:16px;
+    background-color: var(--input-linear);
+    transition: .3s ease-in-out;
+
+}
+
+.span_border::after{
+    content:'';
+    display: block;
+    height:2px;
+    width: 0;
+    margin-bottom: 16px;
+    background: var(--input-linear);
+    transition: .3s ease-in-out;
+}
+
+.input_mail:focus + .span_border::after{
+    width: 100%;
+}
+.input_password:focus + .span_border::after{
+    width: 100%;
+}
+
+.button_login{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    background:var(--button-linear);
+    background-size: 200%;
+    margin-bottom: 30px;
+    color:#cfcfcf;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    cursor:pointer;
+    transition: .3s ease-in-out;
+}
+
+.button_login:hover{
+    background:var(--button2-linear);
+    color:bisque;
+}
+
+.button_login_reset{
+    color:rgb(97, 96, 95);
+    text-decoration: none;
+    font-size: 16px;
+    align-items:center;
+    justify-content: center;
+}
+
+.button_login_reset:hover{
+    color: var(--button2-linear);
+}
